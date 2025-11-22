@@ -1,0 +1,31 @@
+:root{
+            --bg: #ffffff;
+            --text: #111111;
+            --muted: #666666;
+        }
+        body{
+            background: var(--bg);
+            color: var(--text);
+            transition: background .25s ease, color .25s ease;
+        }
+        body.dark{
+            --bg: #0f1115;
+            --text: #e6e6e6;
+            --muted: #bdbdbd;
+            background: var(--bg);
+            color: var(--text);
+        }
+        /* botão fixo no canto superior direito */
+        #dark-mode-toggle{
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            padding: .35rem .6rem;
+            border-radius: 6px;
+            border: 1px solid currentColor;
+            background: transparent;
+            color: inherit;
+            cursor: pointer;
+            font-size: .95rem;
+            z-index: 1000;
+        }
